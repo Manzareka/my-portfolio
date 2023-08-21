@@ -87,44 +87,47 @@
   filter: brightness(50%);
 }
 
-/* SECTION INFO */
+/* SECTION INTRO */
 
 .main {
   margin-top: 135px;
 }
 
-.section-info {
+.section-intro {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 65px;
+  margin-bottom: 100px;
+  padding-right: 200px;
+  padding-left: 200px;
 }
 
-.info-left {
+.intro-left {
   max-width: 334px;
   text-align: right;
   transition: all 0.5s;
 }
 
-.info-h1 {
+.intro-h1 {
   font-size: 40px;
   margin-bottom: 6px;
 }
 
-.info-h2 {
+.intro-h2 {
   font-size: 14px;
   text-transform: uppercase;
   color: #daae19;
   margin-bottom: 33px;
 }
 
-.info-text {
+.intro-text {
   font-size: 15px;
   margin-bottom: 60px;
   line-height: 26px;
 }
 
-.info-button {
+.intro-button {
   padding: 13px 46px;
   font-size: 15px;
   border: none;
@@ -133,33 +136,33 @@
   background-color: #daae19;
 }
 
-.info-button:hover {
+.intro-button:hover {
   background-color: #6d570d;
 }
 
-.info-center {
+.intro-center {
   max-width: 334px;
 }
 
-.info-img {
+.intro-img {
   max-width: 330px;
 }
 
-.info-right {
-  max-width: 500px;
+.intro-right {
+  max-width: 334px;
 }
 
-.info-li {
+.intro-li {
   margin-bottom: 47px;
   list-style: none;
   font-size: 20px;
 }
 
-.info-span {
+.intro-span {
   color: #e93656;
 }
 
-.info-li::after {
+.intro-li::after {
   content: "";
   width: 100%;
   display: block;
@@ -167,22 +170,22 @@
   margin-top: 15px;
 }
 
-/* INFO ANIMATIONS */
+/* SECTION INTRO ANIMATIONS */
 
 .html::after {
-  animation: html 5s linear infinite;
+  animation: html 3s linear infinite;
 }
 
 .css::after {
-  animation: css 5s linear infinite;
+  animation: css 3s linear infinite;
 }
 
 .js::after {
-  animation: js 5s linear infinite;
+  animation: js 3s linear infinite;
 }
 
 .ps::after {
-  animation: ps 5s linear infinite;
+  animation: ps 3s linear infinite;
 }
 
 @keyframes html {
@@ -190,12 +193,12 @@
     width: 0%;
     border-color: #c0392b;
   }
-  25%,
-  26% {
+  50%,
+  51% {
     width: 50%;
     border-color: #c0392b;
   }
-  75%,
+  99%,
   100% {
     width: 100%;
     border-color: #c0392b;
@@ -207,12 +210,12 @@
     width: 0%;
     border-color: #c0392b;
   }
-  25%,
-  26% {
+  50%,
+  51% {
     width: 37%;
     border-color: #c0392b;
   }
-  75%,
+  99%,
   100% {
     width: 75%;
     border-color: #c0392b;
@@ -224,12 +227,12 @@
     width: 0%;
     border-color: #c0392b;
   }
-  25%,
-  26% {
+  50%,
+  51% {
     width: 25%;
     border-color: #c0392b;
   }
-  75%,
+  99%,
   100% {
     width: 50%;
     border-color: #c0392b;
@@ -241,14 +244,59 @@
     width: 0%;
     border-color: #c0392b;
   }
-  25%,
-  26% {
+  50%,
+  51% {
     width: 37%;
     border-color: #c0392b;
   }
-  75%,
+  99%,
   100% {
     width: 75%;
     border-color: #c0392b;
   }
+}
+
+/* SECTION INFO */
+
+.section-info {
+  height: 210px;
+  background-color: #131a36;
+}
+
+.section-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.info-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+
+.info-icon {
+  font-size: 30px;
+  border: 2px dashed white;
+  border-radius: 50%;
+  padding: 15px;
+  margin-right: 30px;
+}
+
+.info-icon:hover {
+  cursor: pointer;
+  background-color: #e93656;
+  border: 2px solid #e93656;
+}
+
+.info-h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.info-p {
+  font-size: 14px;
 }

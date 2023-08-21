@@ -30,7 +30,7 @@ function initSlider() {
   let sliderIntervalId = null;
 
   function startAutoSliderFn() {
-    sliderIntervalId = setInterval(showNext, 3000);
+    sliderIntervalId = setInterval(showNext, 5000);
   }
 
   startAutoSliderFn();
