@@ -1,6 +1,6 @@
 "use strict";
 
-// HEADER SLIDER ANIMATION//
+// HEADER SLIDER ANIMATION //
 
 function initSlider() {
   const slides = document.querySelectorAll(".slide");
@@ -38,7 +38,7 @@ function initSlider() {
 
 initSlider();
 
-// SERVICES SECTION HOVER//
+// SERVICES SECTION HOVER //
 
 const text1 = document.getElementById("text1");
 const text2 = document.getElementById("text2");
@@ -80,3 +80,30 @@ text4.onmouseout = function () {
   text4.innerHTML = `<ion-icon class="service-icon" name="globe-outline"></ion-icon>
   <h3 class="service-h3">JS Development</h3>`;
 };
+
+// comments SECTION SLIDER //
+
+let commentsSlides = document.querySelectorAll(".comments-slide");
+let commentsButton1 = document.getElementById("comments-button-1");
+let commentsButton2 = document.getElementById("comments-button-2");
+let commentsButton3 = document.getElementById("comments-button-3");
+
+commentsSlides[0].classList.add("active");
+
+commentsButton1.addEventListener("click", function () {
+  commentsSlides[0].classList.add("active");
+  commentsSlides[1].classList.remove("active");
+  commentsSlides[2].classList.remove("active");
+});
+
+commentsButton2.addEventListener("click", function () {
+  commentsSlides[0].classList.remove("active");
+  commentsSlides[1].classList.add("active");
+  commentsSlides[2].classList.remove("active");
+});
+
+commentsButton3.addEventListener("click", function () {
+  commentsSlides[0].classList.remove("active");
+  commentsSlides[1].classList.remove("active");
+  commentsSlides[2].classList.add("active");
+});
