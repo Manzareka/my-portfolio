@@ -265,7 +265,7 @@
 
 .section-info {
   height: 210px;
-  background-color: #131a36;
+  background-color: #15263e;
 }
 
 .section-info {
@@ -340,7 +340,7 @@
   background-color: #15263e;
 }
 
-/* comments SECTION */
+/* COMMENTS SECTION */
 
 .comments-slider {
   width: 100%;
@@ -350,7 +350,6 @@
 }
 
 .comments-wrapper {
-  background-color: #15263e;
   color: white;
   background-image: url("/src/img/clip.jpg");
   opacity: 100%;
@@ -412,3 +411,138 @@
 #comments-button-3:hover {
   border: 2px solid #e93656;
 }
+
+/* PROJECTS SECTION */
+
+.projects-h2 {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 55px;
+}
+
+.projects-flex {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 170px;
+}
+
+.projects-left {
+  width: 240px;
+  height: 400px;
+  background-color: #15263e;
+}
+
+.projects-right {
+  width: 900px;
+  height: 700px;
+}
+
+.projects-ul {
+  margin-top: 40px;
+}
+
+.projects-li {
+  list-style: none;
+  text-align: center;
+  line-height: 44px;
+  color: white;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.projects-li:hover {
+  cursor: pointer;
+  color: #e93656;
+}
+
+.projects-right {
+  color: white;
+  font-size: 25px;
+  display: grid;
+  text-align: center;
+
+  grid-template-areas:
+    "1 2 3 "
+    "4 5 6";
+}
+
+.project {
+  width: 300px;
+  height: 350px;
+  padding-top: 110px;
+  transition: all 0.5s;
+}
+
+.project:hover {
+  cursor: pointer;
+  background-image: none;
+  background-color: #15263e;
+}
+
+.projects-icon {
+  display: none;
+}
+
+.projects-p {
+  display: none;
+}
+
+.project:hover .projects-icon {
+  display: inline-block;
+}
+
+.project:hover .projects-p {
+  display: block;
+}
+
+.my-portfolio {
+  grid-area: "1";
+  background-image: url(/src/img/projects1.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.omnifood-project {
+  grid-area: "2";
+  background-image: url(/src/img/projects2.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.rent-apartment {
+  grid-area: "3";
+  background-image: url(/src/img/projects3.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.furniture-verse {
+  grid-area: "4";
+  background-image: url(/src/img/projects4.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.guess-my-number {
+  grid-area: "5";
+  background-image: url(/src/img/projects5.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.pig-game {
+  grid-area: "6";
+  background-image: url(/src/img/projects6.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+.projects-link {
+  text-decoration: none;
+  color: white;
+}
+
+/* .projects-link {
+  filter: brightness(50%);
+} */

@@ -30,7 +30,7 @@ function initSlider() {
   let sliderIntervalId = null;
 
   function startAutoSliderFn() {
-    sliderIntervalId = setInterval(showNext, 5000);
+    sliderIntervalId = setInterval(showNext, 3000);
   }
 
   startAutoSliderFn();
@@ -81,7 +81,7 @@ text4.onmouseout = function () {
   <h3 class="service-h3">JS Development</h3>`;
 };
 
-// comments SECTION SLIDER //
+// COMMENTS SECTION SLIDER //
 
 let commentsSlides = document.querySelectorAll(".comments-slide");
 let commentsButton1 = document.getElementById("comments-button-1");
@@ -107,3 +107,13 @@ commentsButton3.addEventListener("click", function () {
   commentsSlides[1].classList.remove("active");
   commentsSlides[2].classList.add("active");
 });
+
+// PROJECTS CLICK EFFECT //
+
+let liAll = document.getElementById("li-all");
+let liMyPortfolio = document.getElementById("li-my-portfolio");
+let liOmnifoodProject = document.getElementById("li-omnifood-project");
+let liRentApartment = document.getElementById("li-rent-apartment");
+let liFurnitureVerse = document.getElementById("li-furniture-verse");
+let liGuessMyNumber = document.getElementById("li-guess-my-number");
+let liPigGame = document.getElementById("li-pig-game");
