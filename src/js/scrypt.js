@@ -110,10 +110,69 @@ commentsButton3.addEventListener("click", function () {
 
 // PROJECTS CLICK EFFECT //
 
-let liAll = document.getElementById("li-all");
-let liMyPortfolio = document.getElementById("li-my-portfolio");
-let liOmnifoodProject = document.getElementById("li-omnifood-project");
-let liRentApartment = document.getElementById("li-rent-apartment");
-let liFurnitureVerse = document.getElementById("li-furniture-verse");
-let liGuessMyNumber = document.getElementById("li-guess-my-number");
-let liPigGame = document.getElementById("li-pig-game");
+let liAll = document.getElementById("liAll");
+let liMyPortfolio = document.getElementById("liMyPortfolio");
+let liOmnifoodProject = document.getElementById("liOmnifoodProject");
+let liRentApartment = document.getElementById("liRentApartment");
+let liFurnitureVerse = document.getElementById("liFurnitureVerse");
+let liGuessMyNumber = document.getElementById("liGuessMyNumber");
+let liPigGame = document.getElementById("liPigGame");
+
+let gridMyPortfolio = document.getElementById("gridMyPortfolio");
+let gridOmnifoodProject = document.getElementById("gridOmnifoodProject");
+let gridRentApartment = document.getElementById("gridRentApartment");
+let gridFurnitureVerse = document.getElementById("gridFurnitureVerse");
+let gridGuessMyNumber = document.getElementById("gridGuessMyNumber");
+let gridPigGame = document.getElementById("gridPigGame");
+
+let array = [
+  gridAll,
+  gridMyPortfolio,
+  gridOmnifoodProject,
+  gridRentApartment,
+  gridFurnitureVerse,
+  gridGuessMyNumber,
+  gridPigGame,
+];
+
+function removeStyles() {
+  array.forEach((item) => {
+    item.removeAttribute("style");
+  });
+}
+
+liAll.addEventListener("click", function () {
+  array.forEach((item) => {
+    item.style.filter = "brightness(100%)";
+  });
+});
+
+liMyPortfolio.addEventListener("click", function () {
+  removeStyles();
+  gridMyPortfolio.style.filter = "brightness(100%)";
+});
+
+liOmnifoodProject.addEventListener("click", function () {
+  removeStyles();
+  gridOmnifoodProject.style.filter = "brightness(100%)";
+});
+
+liRentApartment.addEventListener("click", function () {
+  removeStyles();
+  gridRentApartment.style.filter = "brightness(100%)";
+});
+
+liFurnitureVerse.addEventListener("click", function () {
+  removeStyles();
+  gridFurnitureVerse.style.filter = "brightness(100%)";
+});
+
+liGuessMyNumber.addEventListener("click", function () {
+  removeStyles();
+  gridGuessMyNumber.style.filter = "brightness(100%)";
+});
+
+liPigGame.addEventListener("click", function () {
+  removeStyles();
+  gridPigGame.style.filter = "brightness(100%)";
+});

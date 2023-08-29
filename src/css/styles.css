@@ -472,12 +472,16 @@
   height: 350px;
   padding-top: 110px;
   transition: all 0.5s;
+  filter: brightness(50%);
+  background-size: cover;
+  background-position: center;
 }
 
 .project:hover {
   cursor: pointer;
   background-image: none;
   background-color: #15263e;
+  filter: brightness(100%);
 }
 
 .projects-icon {
@@ -499,43 +503,31 @@
 .my-portfolio {
   grid-area: "1";
   background-image: url(/src/img/projects1.PNG);
-  background-size: cover;
-  background-position: center;
 }
 
 .omnifood-project {
   grid-area: "2";
   background-image: url(/src/img/projects2.PNG);
-  background-size: cover;
-  background-position: center;
 }
 
 .rent-apartment {
   grid-area: "3";
   background-image: url(/src/img/projects3.PNG);
-  background-size: cover;
-  background-position: center;
 }
 
 .furniture-verse {
   grid-area: "4";
   background-image: url(/src/img/projects4.PNG);
-  background-size: cover;
-  background-position: center;
 }
 
 .guess-my-number {
   grid-area: "5";
   background-image: url(/src/img/projects5.PNG);
-  background-size: cover;
-  background-position: center;
 }
 
 .pig-game {
   grid-area: "6";
   background-image: url(/src/img/projects6.PNG);
-  background-size: cover;
-  background-position: center;
 }
 
 .projects-link {
