@@ -125,8 +125,7 @@ let gridFurnitureVerse = document.getElementById("gridFurnitureVerse");
 let gridGuessMyNumber = document.getElementById("gridGuessMyNumber");
 let gridPigGame = document.getElementById("gridPigGame");
 
-let array = [
-  gridAll,
+let gridArray = [
   gridMyPortfolio,
   gridOmnifoodProject,
   gridRentApartment,
@@ -135,44 +134,78 @@ let array = [
   gridPigGame,
 ];
 
+let liArray = [
+  liAll,
+  liMyPortfolio,
+  liOmnifoodProject,
+  liRentApartment,
+  liFurnitureVerse,
+  liGuessMyNumber,
+  liPigGame,
+];
+
 function removeStyles() {
-  array.forEach((item) => {
+  gridArray.forEach((item) => {
+    item.removeAttribute("style");
+  });
+
+  liArray.forEach((item) => {
     item.removeAttribute("style");
   });
 }
 
+function changeBrightness() {
+  gridArray.forEach((item) => {
+    item.style.filter = "brightness(25%)";
+  });
+}
+
 liAll.addEventListener("click", function () {
-  array.forEach((item) => {
+  removeStyles();
+  liAll.style.color = "#daae19";
+  gridArray.forEach((item) => {
     item.style.filter = "brightness(100%)";
   });
 });
 
 liMyPortfolio.addEventListener("click", function () {
   removeStyles();
+  changeBrightness();
   gridMyPortfolio.style.filter = "brightness(100%)";
+  liMyPortfolio.style.color = "#daae19";
 });
 
 liOmnifoodProject.addEventListener("click", function () {
   removeStyles();
+  changeBrightness();
   gridOmnifoodProject.style.filter = "brightness(100%)";
+  liOmnifoodProject.style.color = "#daae19";
 });
 
 liRentApartment.addEventListener("click", function () {
   removeStyles();
+  changeBrightness();
   gridRentApartment.style.filter = "brightness(100%)";
+  liRentApartment.style.color = "#daae19";
 });
 
 liFurnitureVerse.addEventListener("click", function () {
   removeStyles();
+  changeBrightness();
   gridFurnitureVerse.style.filter = "brightness(100%)";
+  liFurnitureVerse.style.color = "#daae19";
 });
 
 liGuessMyNumber.addEventListener("click", function () {
   removeStyles();
+  changeBrightness();
   gridGuessMyNumber.style.filter = "brightness(100%)";
+  liGuessMyNumber.style.color = "#daae19";
 });
 
 liPigGame.addEventListener("click", function () {
   removeStyles();
+  changeBrightness();
   gridPigGame.style.filter = "brightness(100%)";
+  liPigGame.style.color = "#daae19";
 });

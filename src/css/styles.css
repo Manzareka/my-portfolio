@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -139,6 +140,7 @@
   color: white;
   background-color: #daae19;
   transition: all 0.5s;
+  text-decoration: none;
 }
 
 .intro-button:hover {
@@ -161,6 +163,7 @@
   margin-bottom: 47px;
   list-style: none;
   font-size: 20px;
+  width: 334px;
 }
 
 .intro-span {
@@ -171,7 +174,7 @@
   content: "";
   width: 100%;
   display: block;
-  border-bottom: 10px solid #f0f0f0;
+  border-bottom: 10px solid #fafafa;
   margin-top: 15px;
 }
 
@@ -196,68 +199,68 @@
 @keyframes html {
   0% {
     width: 0%;
-    border-color: #c0392b;
+    border-color: #e93656;
   }
   50%,
   51% {
     width: 50%;
-    border-color: #c0392b;
+    border-color: #e93656;
   }
   99%,
   100% {
     width: 100%;
-    border-color: #c0392b;
+    border-color: #e93656;
   }
 }
 
 @keyframes css {
   0% {
     width: 0%;
-    border-color: #c0392b;
+    border-color: #e93656;
   }
   50%,
   51% {
-    width: 37%;
-    border-color: #c0392b;
+    width: 40%;
+    border-color: #e93656;
   }
   99%,
   100% {
-    width: 75%;
-    border-color: #c0392b;
+    width: 80%;
+    border-color: #e93656;
   }
 }
 
 @keyframes js {
   0% {
     width: 0%;
-    border-color: #c0392b;
+    border-color: #e93656;
   }
   50%,
   51% {
-    width: 25%;
-    border-color: #c0392b;
+    width: 30%;
+    border-color: #e93656;
   }
   99%,
   100% {
-    width: 50%;
-    border-color: #c0392b;
+    width: 60%;
+    border-color: #e93656;
   }
 }
 
 @keyframes ps {
   0% {
     width: 0%;
-    border-color: #c0392b;
+    border-color: #e93656;
   }
   50%,
   51% {
-    width: 37%;
-    border-color: #c0392b;
+    width: 40%;
+    border-color: #e93656;
   }
   99%,
   100% {
-    width: 75%;
-    border-color: #c0392b;
+    width: 80%;
+    border-color: #e93656;
   }
 }
 
@@ -266,6 +269,7 @@
 .section-info {
   height: 210px;
   background-color: #15263e;
+  margin-bottom: 150px;
 }
 
 .section-info {
@@ -313,12 +317,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-top: 200px;
-  margin-bottom: 160px;
+  margin-bottom: 150px;
 }
 
 .service {
-  background-color: #f0f0f0;
+  background-color: #fafafa;
   padding: 133px 50px;
   width: 285px;
   height: 360px;
@@ -351,12 +354,12 @@
 
 .comments-wrapper {
   color: white;
-  background-image: url("/src/img/clip.jpg");
+  background-image: url("/src/img/wrap1.jpg");
   opacity: 100%;
 }
 
 .comments-slide {
-  padding: 200px 400px;
+  padding: 200px 0px 200px 400px;
   display: none;
   align-items: center;
   gap: 50px;
@@ -390,7 +393,7 @@
   padding: 20px 0;
   position: absolute;
   right: 20%;
-  top: 40%;
+  top: 38%;
 }
 
 #comments-button-1,
@@ -414,7 +417,7 @@
 
 /* PROJECTS SECTION */
 
-.projects-h2 {
+.section-h2 {
   text-align: center;
   font-size: 70px;
   margin-bottom: 55px;
@@ -424,7 +427,7 @@
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 170px;
+  margin-bottom: 150px;
 }
 
 .projects-left {
@@ -453,7 +456,7 @@
 
 .projects-li:hover {
   cursor: pointer;
-  color: #e93656;
+  color: #daae19;
 }
 
 .projects-right {
@@ -472,7 +475,7 @@
   height: 350px;
   padding-top: 110px;
   transition: all 0.5s;
-  filter: brightness(50%);
+  /* filter: brightness(50%); */
   background-size: cover;
   background-position: center;
 }
@@ -535,6 +538,74 @@
   color: white;
 }
 
-/* .projects-link {
-  filter: brightness(50%);
-} */
+/* ARTICLES SECTION */
+
+.article-1,
+.article-2,
+.article-3 {
+  max-width: 1770px;
+  height: 590px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+
+.article-1,
+.article-3 {
+  margin-left: 150px;
+}
+
+.article-2 {
+  flex-direction: row-reverse;
+}
+
+.article-info {
+  padding-left: 50px;
+  width: 800px;
+}
+
+.article-icon {
+  margin-top: 80px;
+  font-size: 30px;
+  padding: 30px;
+  color: #daae19;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 35px;
+}
+
+.article-h4 {
+  color: #888888;
+  margin-bottom: 5px;
+}
+
+.article-h3 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.article-p {
+  padding-right: 200px;
+}
+
+.article-years {
+  background-color: #15263e;
+  max-width: 125px;
+  display: flex;
+  align-items: center;
+}
+
+.article-years-p {
+  font-size: 30px;
+  transform: rotate(90deg);
+  width: 300px;
+  color: white;
+}
+
+.article-img {
+  max-width: 950px;
+}
+
+.articles {
+  margin-bottom: 150px;
+}
