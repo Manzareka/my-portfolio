@@ -318,6 +318,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin-bottom: 150px;
+  margin-top: 150px;
 }
 
 .services-link {
@@ -359,7 +360,7 @@
 
 .comments-wrapper {
   color: white;
-  background-image: url("../src/img/wrap1.jpg");
+  background-image: url(../img/night.jpg);
   opacity: 100%;
 }
 
@@ -510,32 +511,32 @@
 
 .my-portfolio {
   grid-area: "1";
-  background-image: url(../src/img/projects1.PNG);
+  background-image: url(../img/projects1.png);
 }
 
 .omnifood-project {
   grid-area: "2";
-  background-image: url(../src/img/projects2.PNG);
+  background-image: url(../img/projects2.png);
 }
 
 .rent-apartment {
   grid-area: "3";
-  background-image: url(../src/img/projects3.PNG);
+  background-image: url(../img/projects3.png);
 }
 
 .furniture-verse {
   grid-area: "4";
-  background-image: url(../src/img/projects4.PNG);
+  background-image: url(../img/projects4.png);
 }
 
 .guess-my-number {
   grid-area: "5";
-  background-image: url(../src/img/projects5.PNG);
+  background-image: url(../img/projects5.png);
 }
 
 .pig-game {
   grid-area: "6";
-  background-image: url(../src/img/projects6.PNG);
+  background-image: url(../img/projects6.png);
 }
 
 .projects-link {
@@ -619,7 +620,8 @@
   height: 660px;
   text-align: center;
   padding-top: 100px;
-  background-image: url("../src/img/wrap2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/map.jpg);
 }
 
 .cnt {
@@ -812,38 +814,6 @@
 }
 
 @media (max-width: 1200px) {
-  .section-intro {
-    flex-direction: column;
-    margin-right: 0px;
-  }
-
-  .intro-left,
-  .intro-center,
-  .intro-right {
-    max-width: 500px;
-    margin-bottom: 50px;
-    align-self: center;
-  }
-
-  .intro-left {
-    margin-right: 0px;
-  }
-
-  .intro-right {
-    align-self: center;
-  }
-
-  .intro-h1,
-  .intro-h2,
-  .intro-text {
-    text-align: center;
-  }
-
-  .intro-button {
-    display: flex;
-    justify-content: center;
-  }
-
   .section-services {
     gap: 20px;
   }
@@ -929,6 +899,10 @@
   .service {
     width: 200px;
   }
+
+  .section-services {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -950,6 +924,62 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .section-intro {
+    flex-direction: column;
+    margin-right: 0px;
+  }
+
+  .intro-left,
+  .intro-center,
+  .intro-right {
+    max-width: 500px;
+    margin-bottom: 50px;
+    align-self: center;
+  }
+
+  .intro-left {
+    margin-right: 0px;
+  }
+
+  .intro-right {
+    align-self: center;
+  }
+
+  .intro-h1,
+  .intro-h2,
+  .intro-text {
+    text-align: center;
+  }
+
+  .intro-button {
+    display: flex;
+    justify-content: center;
+  }
+  .projects-left {
+    width: 800px;
+  }
+
+  .projects-right {
+    display: inline-block;
+    height: auto;
+    width: 800px;
+  }
+
+  .project {
+    width: 800px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+
+  .guess-my-number,
+  .pig-game {
+    background-size: cover;
+    background-position: top;
+  }
+}
+
 @media (max-width: 900px) {
   .service {
     width: 285px;
@@ -966,13 +996,11 @@
   .message {
     width: 620px;
   }
-
-  .projects-left,
   .projects-right {
-    max-width: 600px;
+    width: 600px;
   }
 
   .project {
-    max-width: 200px;
+    width: 600px;
   }
 }
