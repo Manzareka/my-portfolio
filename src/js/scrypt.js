@@ -209,3 +209,37 @@ liPigGame.addEventListener("click", function () {
   gridPigGame.style.filter = "brightness(100%)";
   liPigGame.style.color = "#daae19";
 });
+
+// SUBMIT FORMS //
+
+const regForm = document.querySelector("#reg"),
+  userName = document.querySelector("#user_name"),
+  userEmail = document.querySelector("#user_email"),
+  userTel = document.querySelector("#user_phone"),
+  userMessage = document.querySelector("#user_message"),
+  btn = document.querySelector("#btn");
+
+regForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const userObj = {
+    first_name: userName.value,
+    phone: userTel.value,
+    email: userEmail.value,
+    message: userMessage.value,
+  };
+
+  function addPost(userObj) {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      body: JSON.stringify({ userObj }),
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+  }
+
+  addPost(userObj);
+});

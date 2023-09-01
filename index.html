@@ -548,57 +548,53 @@
           <h2 class="section-h2 cnt">CONTACT US</h2>
           <p class="section-p">Price . Quality . Time</p>
           <div class="forms-grid">
-            <form class="short-form" action="#" method="#" id="form1">
-              <label for="name"></label>
+            <form class="form" action="#" method="#" id="reg">
+              <input id="user_id" type="hidden" placeholder="" value="" />
+
+              <label for="user_name"></label>
               <input
                 class="input name"
                 type="text"
                 placeholder="Your Name *"
-                name="name"
-                id="name"
+                name="user_name"
+                id="user_name"
                 required
               />
-            </form>
 
-            <form class="short-form" action="#" method="#" id="form2">
-              <label for="surname"></label>
-              <input
-                class="input surname"
-                type="text"
-                placeholder="Surname *"
-                name="surname"
-                id="surname"
-                required
-              />
-            </form>
-
-            <form class="short-form" action="#" method="#" id="form3">
-              <label for="email"></label>
+              <label for="user_email"></label>
               <input
                 class="input email"
-                type="text"
-                placeholder="Email *"
-                name="email"
-                id="email"
+                type="email"
+                placeholder="Email Address *"
+                name="user_email"
+                id="user_email"
                 required
               />
-            </form>
 
-            <form class="long-form" action="#" method="#" id="form4">
-              <label for="message"></label>
+              <label for="user_phone"></label>
+              <input
+                class="input tel"
+                type="number"
+                placeholder="Phone Number *"
+                name="user_phone"
+                id="user_phone"
+                required
+              />
+
+              <label for="user_message"></label>
               <input
                 class="input message"
-                type="message"
+                type="text"
                 placeholder="Message *"
-                name="message"
-                id="message"
+                name="user_message"
+                id="user_message"
                 required
               />
-            </form>
 
-            <div class="submit">
-              <button class="button" type="submit">SEND MESSAGE</button>
-            </div>
+              <div class="input-field">
+                <button class="btn" type="submit">S U B M I T</button>
+              </div>
+            </form>
           </div>
         </section>
       </main>
