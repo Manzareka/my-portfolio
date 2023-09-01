@@ -511,32 +511,32 @@
 
 .my-portfolio {
   grid-area: "1";
-  background-image: url(../img/projects1.PNG);
+  background-image: url(../img/projects1.jpg);
 }
 
 .omnifood-project {
   grid-area: "2";
-  background-image: url(../img/projects2.PNG);
+  background-image: url(../img/projects2.jpg);
 }
 
 .rent-apartment {
   grid-area: "3";
-  background-image: url(../img/projects3.PNG);
+  background-image: url(../img/projects3.jpg);
 }
 
 .furniture-verse {
   grid-area: "4";
-  background-image: url(../img/projects4.PNG);
+  background-image: url(../img/projects4.jpg);
 }
 
 .guess-my-number {
   grid-area: "5";
-  background-image: url(../img/projects5.PNG);
+  background-image: url(../img/projects5.jpg);
 }
 
 .pig-game {
   grid-area: "6";
-  background-image: url(../img/projects6.PNG);
+  background-image: url(../img/projects6.jpg);
 }
 
 .projects-link {
