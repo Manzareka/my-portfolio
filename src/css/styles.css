@@ -877,7 +877,7 @@
 
   .comments-btns {
     right: 20%;
-    top: 50%;
+    top: 55%;
   }
 
   .comments-slide {
@@ -1034,5 +1034,30 @@
 
   .long-form {
     width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-h1 {
+    font-size: 60px;
+  }
+
+  ion-icon {
+    font-size: 40px;
+  }
+
+  .intro-img {
+    max-width: 280px;
+  }
+
+  .contact {
+    height: 700px;
+  }
+}
+
+@media (max-width: 400px) {
+  .comments-btns {
+    right: 5%;
+    top: 65%;
   }
 }
